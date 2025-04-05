@@ -90,21 +90,9 @@ $total_comments = $select_comments->rowCount();
       </div>
 
    </div>
+   
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php include '../components/footer.php'; ?>

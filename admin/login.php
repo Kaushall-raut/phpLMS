@@ -4,11 +4,23 @@ include '../components/connect.php';
 
 if(isset($_POST['submit'])){
 
+   $super_admin="superAdmin@gmail.com" ;
+
+   // $super_admin_pass=password_hash();
+
    $email = $_POST['email'];
    $email = filter_var($email, FILTER_SANITIZE_STRING);
    $pass = sha1($_POST['pass']);
    $pass = filter_var($pass, FILTER_SANITIZE_STRING);
 
+   // echo "$email";
+
+if($email=== $super_admin or $pass=== "53455345" ){
+   // echo "$email";super_admin\super_admin_dashboard.php
+header("location:../super_admin/super_admin_dashboard.php");
+}else{
+
+// echo "$email";
    $select_tutor = $conn->prepare("SELECT * FROM `tutors` WHERE email = ? AND password = ? LIMIT 1");
    $select_tutor->execute([$email, $pass]);
    $row = $select_tutor->fetch(PDO::FETCH_ASSOC);
@@ -19,6 +31,7 @@ if(isset($_POST['submit'])){
    }else{
       $message[] = 'incorrect email or password!';
    }
+}
 
 }
 
