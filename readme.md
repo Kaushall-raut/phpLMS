@@ -14,5 +14,6 @@
  <h5> educator can create playlist and add videos into its specific playlist. and can also delete any users comments from his/her videos.</h5>
  <h5> admin can also update or delete its playlist or video .</h5>
 
- <h3>SUper admin panel </h3>
+ <h3>Super admin panel </h3>
  <h5> super admin can manage and update  both users and educators data. </h5>
+ <h5>and super admin can also check all the email sent by the users </h5>
