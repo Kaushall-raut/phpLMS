@@ -1,13 +1,12 @@
-<?php  include "../components/connect.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
     <link rel="stylesheet" href="../css/admin_style.css">
-<style>
+    <style>
     body{
 
     }
@@ -37,7 +36,8 @@
 </style>
 </head>
 <body>
-    <?php include "../components/super_admin_header.php"; ?>
+    <?php include "../components/super_admin_header.php";
+    include "../components/connect.php"; ?>
     <section class="table">
      <table>
 
@@ -46,9 +46,7 @@
             <th>
                 Name
             </th>
-            <th>
-                Profession
-            </th>
+           
             <th>
                 Email id 
             </th>
@@ -59,7 +57,7 @@
 
     <?php 
     
-    $educators=$conn->prepare("select * from `tutors`");
+    $educators=$conn->prepare("select * from `users`");
     $educators->execute();
    
     // print "$results";
@@ -73,16 +71,16 @@
 <?php echo "$results[name]";?>
             </td>
             <td>
-            <?php echo "$results[profession]";?>
+            <?php echo "$results[email]";?> 
             </td>
             <td>
-            <?php echo "$results[email]";?>
+            <?php //echo "$results[email]";?>
             </td>
             <td>
-                <a href="super_educator_update.php?id=<?php echo $results['id']; ?>&name=<?php echo $results['name'];?>&profession=<?php echo $results['profession']; ?>&email=<?php echo $results['email']; ?>">update</a>
+                <a href="super_user_update.php?id=<?php echo $results['id']; ?>&name=<?php echo $results['name'];?>&email=<?php echo $results['email']; ?>">update</a>
             </td>
             <td>
-                <a href="delete.php?id=<?php echo $results['id']; ?>" >delete</a>
+                <a href="user_delete.php?id=<?php echo $results['id']; ?>" >delete</a>
             </td>
         </tr>
     </tbody>
