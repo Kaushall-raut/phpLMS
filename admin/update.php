@@ -123,7 +123,7 @@ if(isset($_POST['submit'])){
       <div class="flex">
          <div class="col">
             <p>your name </p>
-            <input type="text" name="name" placeholder="<?= $fetch_profile['name']; ?>" maxlength="50"  class="box">
+            <input type="text" name="name" value="<?= $fetch_profile['name']; ?>" maxlength="50"  class="box">
             <p>your profession </p>
             <select name="profession" class="box">
                <option value="" selected><?= $fetch_profile['profession']; ?></option>
@@ -140,7 +140,7 @@ if(isset($_POST['submit'])){
                <option value="photographer">photographer</option>
             </select>
             <p>your email </p>
-            <input type="email" name="email" placeholder="<?= $fetch_profile['email']; ?>" maxlength="20"  class="box">
+            <input type="email" name="email" value="<?= $fetch_profile['email']; ?>" maxlength="20"  class="box">
          </div>
          <div class="col">
             <p>old password :</p>

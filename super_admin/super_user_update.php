@@ -20,9 +20,9 @@
     // echo $email;
     ?>
 
-<section class="form-container" style="min-height: calc(100vh - 19rem);">
+<section class="form-container" style="min-height: calc(100vh - 19rem) ; width:50rem;">
 
-<form action="" method="post" >
+<form action="" method="post" style="width:39rem;">
       <h3>update user profile</h3>
       <div class="flex">
          <div class="col">
@@ -58,15 +58,7 @@ if (isset($_POST['submit'])) {
 
 
     <script src="../js/admin_script.js"></script>
-    <script>
-               let store=location.pathname;
-        let path=store.substr(22);
-  console.log(path);
-    
-  
-  if(path==path){
-        document.querySelector(".search-form").remove();           
-    }
+    <script src="../js/super_admin.js">
     </script>
 </body>
 </html>

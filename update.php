@@ -116,9 +116,9 @@ if(isset($_POST['submit'])){
       <div class="flex">
          <div class="col">
             <p>your name</p>
-            <input type="text" name="name" placeholder="<?= $fetch_profile['name']; ?>" maxlength="100" class="box">
+            <input type="text" name="name" value="<?= $fetch_profile['name']; ?>" maxlength="100" class="box">
             <p>your email</p>
-            <input type="email" name="email" placeholder="<?= $fetch_profile['email']; ?>" maxlength="100" class="box">
+            <input type="email" name="email" value="<?= $fetch_profile['email']; ?>" maxlength="100" class="box">
             <p>update pic</p>
             <input type="file" name="image" accept="image/*" class="box">
          </div>

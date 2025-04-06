@@ -35,7 +35,7 @@ if(isset($_COOKIE['user_id'])){
 
       <div class="content">
          <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis distinctio, nisi consequatur ad sequi, rem odit fugiat assumenda eligendi iure aut sunt ratione, tempore porro expedita quisquam.</p>
+         <p>Because our main motive is to provide free resources to all the students .</p>
          <a href="courses.php" class="inline-btn">our courses</a>
       </div>
 
@@ -85,7 +85,7 @@ if(isset($_COOKIE['user_id'])){
    <div class="box-container">
 
       <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem, officia dolorum mollitia ullam commodi.</p>
          <div class="user">
             <img src="images/pic-2.jpg" alt="">
             <div>
@@ -102,7 +102,7 @@ if(isset($_COOKIE['user_id'])){
       </div>
 
       <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vero quis. Delectus dolorum ab ut?</p>
          <div class="user">
             <img src="images/pic-3.jpg" alt="">
             <div>
@@ -119,7 +119,7 @@ if(isset($_COOKIE['user_id'])){
       </div>
 
       <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nobis molestias eum officiis eos beatae.</p>
          <div class="user">
             <img src="images/pic-4.jpg" alt="">
             <div>

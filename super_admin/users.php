@@ -6,34 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/admin_style.css">
-    <style>
-    body{
-
-    }
-    table,th,td{
-        /* gap:1rem; */
-        /* margin:1rem; */
-        border:1px solid red;
-        /* display:flex;
-        justify-content:center;
-        align-items:center; */
-        /* height: 12rem; */
-        /* width:100%; */
-        font-size:2rem;
-        color:white;
-    }
-    tbody{
-        /* display:flex;
-        justify-content:center;
-        align-items:center; */
-    }
-    .table{
-        height:80vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-</style>
+    <link rel="stylesheet" href="../css/super_admin.css">
 </head>
 <body>
     <?php include "../components/super_admin_header.php";
@@ -47,7 +20,7 @@
                 Name
             </th>
            
-            <th>
+            <th colspan=3>
                 Email id 
             </th>
           
@@ -73,9 +46,7 @@
             <td>
             <?php echo "$results[email]";?> 
             </td>
-            <td>
-            <?php //echo "$results[email]";?>
-            </td>
+          
             <td>
                 <a href="super_user_update.php?id=<?php echo $results['id']; ?>&name=<?php echo $results['name'];?>&email=<?php echo $results['email']; ?>">update</a>
             </td>
@@ -89,15 +60,7 @@
     </section>
 
     <script src="../js/admin_script.js"></script>
-    <script>
-               let store=location.pathname;
-        let path=store.substr(22);
-  console.log(path);
-    
-  
-  if(path=="educators.php"){
-        document.querySelector(".search-form").remove();           
-    }
+    <script src="../js/super_admin.js">
     </script>
 </body>
 </html>

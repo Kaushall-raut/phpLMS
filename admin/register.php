@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
       $message[] = 'email already taken!';
    }else{
       if($pass != $cpass){
-         $message[] = 'confirm passowrd not matched!';
+         $message[] = 'confirm password not matched!';
       }else{
          $insert_tutor = $conn->prepare("INSERT INTO `tutors`(id, name, profession, email, password, image) VALUES(?,?,?,?,?,?)");
          $insert_tutor->execute([$id, $name, $profession, $email, $cpass, $rename]);
@@ -96,7 +96,7 @@ if(isset($message)){
                <option value="photographer">photographer</option>
             </select>
             <p>your email <span>*</span></p>
-            <input type="email" name="email" placeholder="enter your email" maxlength="20" required class="box">
+            <input type="email" name="email" placeholder="enter your email" required class="box">
          </div>
          <div class="col">
             <p>your password <span>*</span></p>

@@ -63,13 +63,13 @@ $total_bookmarked = $select_bookmark->rowCount();
       <?php
          }else{ 
       ?>
-      <div class="box" style="text-align: center;">
+      <!-- <div class="box" style="text-align: center;">
          <h3 class="title">please login or register</h3>
           <div class="flex-btn" style="padding-top: .5rem;">
             <a href="login.php" class="option-btn">login</a>
             <a href="register.php" class="option-btn">register</a>
          </div>
-      </div>
+      </div> -->
       <?php
       }
       ?>
@@ -102,7 +102,7 @@ $total_bookmarked = $select_bookmark->rowCount();
 
       <div class="box tutor">
          <h3 class="title">become a educator</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, laudantium.</p>
+         <p>Join us and start a beautiful journey</p>
          <a href="admin/register.php" class="inline-btn">get started</a>
       </div>
 

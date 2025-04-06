@@ -41,11 +41,11 @@ if(isset($message)){
          <h3><?= $fetch_profile['name']; ?></h3>
          <span>student</span>
          <a href="profile.php" class="btn">view profile</a>
-         <div class="flex-btn">
+         <!-- <div class="flex-btn">
             <a href="login.php" class="option-btn">login</a>
             <a href="register.php" class="option-btn">register</a>
-         </div>
-         <a href="components/user_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
+         </div> -->
+         <a href="components/user_logout.php"  class="delete-btn">logout</a>
          <?php
             }else{
          ?>
@@ -99,6 +99,7 @@ if(isset($message)){
       <a href="courses.php"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
       <a href="teachers.php"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
       <a href="contact.php"><i class="fas fa-headset"></i><span>contact us</span></a>
+      <a href="components/user_logout.php"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a>
    </nav>
 
 </div>

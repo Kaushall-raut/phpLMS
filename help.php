@@ -68,7 +68,7 @@ if(isset($_COOKIE['user_id'])){
             margin-top:2rem;
             padding:1px;
             border:2px solid grey;
-            background-color:blue;
+            background-color:skyblue;
             border-radius:30px;
             color:white;
             overflow:scroll;

@@ -15,6 +15,7 @@
    <div class="icons">
       <div id="menu-btn" class="fas fa-bars"></div>
       <div id="search-btn" class="fas fa-search"></div>
+   
       <div id="user-btn" class="fas fa-user"></div>
       <div id="toggle-btn" class="fas fa-sun"></div>
    </div>
@@ -45,8 +46,8 @@
 
 <nav class="navbar">
    <a href="super_admin_dashboard.php"><i class="fas fa-home"></i><span>home</span></a>
-   <a href="educators.php"><i class="fa-solid fa-bars-staggered"></i><span>Educators</span></a>
-   <a href="users.php"><i class="fas fa-graduation-cap"></i><span>Users</span></a>
+   <a href="educators.php"><i class="fa-solid fa-chalkboard-user"></i><span>Educators</span></a>
+   <a href="users.php"><i class="fa-solid fa-user"></i><span>Users</span></a>
    <a href="super_admin_email.php"><i class="fas fa-comment"></i><span>Emails</span></a>
    <a href="../components/admin_logout.php" onclick="return confirm('logout from this website?');"><i class="fas fa-right-from-bracket"></i><span>logout</span></a>
 </nav>

@@ -73,15 +73,7 @@ if (isset($_POST['submit'])) {
 
 
     <script src="../js/admin_script.js"></script>
-    <script>
-               let store=location.pathname;
-        let path=store.substr(22);
-  console.log(path);
-    
-  
-  if(path==path){
-        document.querySelector(".search-form").remove();           
-    }
+    <script src="../js/super_admin.js">
     </script>
 </body>
 </html>
